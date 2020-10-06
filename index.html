@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Bin Liang</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
             scroll-behavior: smooth;
+            background-image: url(images/background.jpg);           
+            font-family: fantasy;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
         }
 
         .faded {
@@ -77,19 +81,33 @@
         .next a {
             color: rgb(33, 37, 41);
         }
+        .carousel-item{
+            height: 300px;
+        } 
+        .carousel-item img{
+            height: 300px;
+
+        }
     </style>
 </head>
 
 <body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#landing">Bin Liang<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </button>
+            <div class="dropdown-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#landing">Home</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
@@ -97,47 +115,55 @@
                     <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#pictures">Pictures</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-            </ul>
-        </div>
-    </nav>
+            </div>
+          </div>
+    </nav>    
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Bin!</h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
                 University.</h5>
         </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+             <div class="col my-3"><img src="images/pythonn.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+            <div class="col my-3"><img src="images/lucid.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Lucid Chart" /></div>
+            <div class="col my-3"><img src="images/visualstudio.png" class="lang" data-toggle="tooltip" data-placement="top" 
+                    title="Visual Studio" /></div>
+            <div class="col my-3"><img src="images/charpp.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+            <div class="col my-3"><img src="images/javaa.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+            <div class="col my-3"><img src="images/aspnett.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+            <div class="col my-3"><img src="images/mssqll.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Microsoft SQL Server" /></div> 
+            <div class="col my-3"><img src="images/mongodb.png" class="lang" data-toggle="tooltip" data-placement="top"
                     title="MongoDB" /></div>
-
+            <div class="col my-3"><img src="images/oraclesql.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Oracle Sql" /></div>  
+            <div class="col my-3"><img src="images/microsoftaccess.png" class="lang" data-toggle="tooltip" data-placement="top"
+                    title="Microsoft Access" /></div>
+    
         </div>
         <div class="row my-4">
-            <div class="col">
+             <div class="col">
                 <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
             </div>
             <div class="col">
                 <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+            </div>
+            <div class="col">
+                <a href="#pictures"><button type="button" class="btn btn-outline">Pictures</button></a>
             </div>
             <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
@@ -146,45 +172,50 @@
         <div class="row mt-5 next">
             <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Projects"></i></a> </div>
-
     </div>
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            <h5 class="display-5 mx-auto faded text-center mb-4">Here are some projects I've worked on.</h5>
         </div>
         <div class="row w-100">
             <h5>Inspiro for Esperanza</h5>
         </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
-        </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5>URP/SSP Student Success Tracker</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+            <p class="text-justify">The URP/SSP Student Success Tracker is able to consistently keep track of undergradute student
+                success. Previously, the student success was tracked by using Excel. The Director of Undergraduate Research Program will
+                have to email students to get student's success information. The information will then be manually entered into an excel sheet.
+                But, the URP/SSP Student Success Tracker let URP/SSP students update their latest research papers, awards,and presentations. 
+                The Director of Undergraduate Research Program, students, and Principal Investigators can easily use this tracker to view and 
+                keep track of information.</p>
         </div>
         <div class="row w-100">
-            <h5>Query Dating Site</h5>
+            <h5>Grocery Tracker</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">The Grocery Tracker application allows users to store, track, and analyze their purchase history. The user 
+                can scan their receipt into the application using their device's camera. Each item's name, cost, and store name will be
+                saved in a secured database. If the user wants to check how much they previously purchased an item for, they can use the search
+                system to find the item. The application will provide the price, store name, location, and date where the item was bought. The 
+                user can also search within a time frame to get a sum total on how much money was spent on groceries.</p>
         </div>
         <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+            <h5>Mangiamo Pizza Website</h5>
+        </div>
+        <div class="row w-100">
+            <p class="text-justify">Mangiamo Pizza is for a local mom-and-pop pizzeria. The website gives the customer the option to have their
+                pizza delivered or picked up. There are five sizes from mini to X-large pizza. The customer can choose from a variety of crusts 
+                like Regular, Stuffed Crust, Deep Dish, Thin Crust, Cheesy Garlic, and Butter Crust. After selecting the crust, the customer
+                can pick from six types of sauces, Tomato Sauce, Marinara Sauce, Honey BBQ Sauce, Garlic Parmesan Sauce, Alfredo Sauce,
+                and Ranch. Finally, the customer will have a selection of nine different types of toppings to add to their pizza which are 
+                Ham, Pepperoni, Bacon, Italian Sausage, Beef, Onions, Black Olives, Pepper, and Mushroom. There is an option for the customer 
+                to add premium additions and family meals. When the order is done, the website will present the order receipt to the customer to review.</p>
         </div>
         <div class="row mt-5 next">
             <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
@@ -221,23 +252,74 @@
                 <h5>Database Management Systems</h5>
             </div>
         </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <h5>Program Design and Abstraction</h5>
+            </div>
+            <div class="col text-center course">
+                <h5>Mathematical Concepts in Computing</h5>
+            </div>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#pictures" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Pictures"></i></a> </div>
+    </div>
+    
+    
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="pictures" data-interval="500">
+
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Pictures</h4>
+        </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="display-5 mx-auto faded text-center">Done already? Enjoy some pictures from my last vacation.</h5>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/pic1.JPG" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/pic2.JPG" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/pic3.JPG" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/pic4.JPG" alt="Third slide">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
         <div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+                    title="Contact"></i></a> 
+        </div>
     </div>
+
+
+    
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
+            <h5 class="display-5 mx-auto faded text-center">Don't be shy.</h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:bin.liang@ymail.com" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/bin-liang-95001b180/" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/BinLiang6" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
